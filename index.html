@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="preload">
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <button onclick="toggleDarkMode()" id="darkModeBtn">🌙 Dark Mode</button>
+</nav>
+
+<div id="spinner" class="hidden">
+  <div class="spinner-circle"></div>
+</div>
+
+
+<div class="container">
+  <h1>Hi, I'm Micah!</h1>
+  <p>I’m learning front-end development and I love building websites.</p>
+</div>
+
+<div class="container light">
+  <h2>My Hobbies</h2>
+  <ul>
+    <li>Playing music</li>
+    <li>Designing websites</li>
+    <li>Learning new tech</li>
+  </ul>
+</div>
+
+<div class="container dark">
+  <h2>Projects</h2>
+  <button onclick="toggleProjects()">Show/Hide Projects</button>
+  <div id="projectsContent">
+    <p>Check out my work on <a href="https://github.com/" target="_blank">GitHub</a>!</p>
+  </div>
+</div>
+
+<div class="container accent">
+  <h2>Quote</h2>
+  <p>"Every expert was once a beginner."</p>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

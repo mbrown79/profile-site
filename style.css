@@ -1,0 +1,119 @@
+body {
+  font-family: sans-serif;
+  background-color: #d4ebfd;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  background-color: #9ac3ff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+nav {
+  margin-bottom: 20px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.container {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.container.fade-out {
+  opacity: 0;
+}
+
+body.preload .container {
+  opacity: 0;
+}
+
+
+button:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s ease;
+}
+.container {
+  background: white;
+  color: #007bff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.container.light {
+  background-color: #74b6ff;
+  color: white;
+}
+
+.container.dark {
+  background-color: #74b6ff;
+  color: white;
+}
+
+.container.accent {
+  background-color: #74b6ff;
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+#projectsContent {
+  transition: all 0.3s ease;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #80bfff;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .container.dark {
+  background-color: #2c2c2c;
+}
+
+#darkModeBtn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
